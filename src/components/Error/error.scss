@@ -1,17 +1,17 @@
 @use '../../style/variables' as variable;
 @use '../../style/mixins' as mixins;
 
-.error_content{
+.error_content {
   @include mixins.flex-center(space-around, column);
   height: 65vh;
-  h1{
+  h1 {
     @include mixins.typography(9.6rem, 700, variable.$color-primary);
   }
-  h2{
+  h2 {
     @include mixins.typography(1.8rem, 500, variable.$color-primary);
     text-align: center;
   }
-  a{
+  a {
     text-decoration: underline;
     @include mixins.typography(1.4rem, 700, variable.$text-dark);
     &:visited {

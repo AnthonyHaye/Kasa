@@ -1,33 +1,33 @@
 @use '../../style/variables' as variable;
 @use '../../style/mixins' as mixins;
 
-nav{
-    ul {
-        display: flex;
-        gap: 1.5rem;
-        li {
-            list-style: none;
-            a{
-                text-decoration: none;
-                @include mixins.typography(1.2rem, 500, variable.$text-dark);
-                text-transform: uppercase;
-                &.active{
-                    text-decoration: underline;
-                    font-weight: 700;
-                }
-                &:visited {
-                    color: variable.$text-dark;
-                }
-
-                @media (min-width: variable.$md-breakpoint) {
-                    font-size: 1.8rem;
-                    text-transform: capitalize;
-                  }
-                
-                  @media (min-width: variable.$lg-breakpoint) {
-                    font-size: 2.4rem;
-                  }
-            }
+nav {
+  ul {
+    display: flex;
+    gap: 1.5rem;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        @include mixins.typography(1.2rem, 500, variable.$text-dark);
+        text-transform: uppercase;
+        &.active {
+          text-decoration: underline;
+          font-weight: 700;
         }
+        &:visited {
+          color: variable.$text-dark;
+        }
+
+        @media (min-width: variable.$md-breakpoint) {
+          font-size: 1.8rem;
+          text-transform: capitalize;
+        }
+
+        @media (min-width: variable.$lg-breakpoint) {
+          font-size: 2.4rem;
+        }
+      }
     }
+  }
 }

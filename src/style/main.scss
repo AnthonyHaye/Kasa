@@ -1,5 +1,5 @@
-
 @use './variables' as variable;
+@use './reset';
 @use './mixins' as mixins;
 
 /* Applique une bordure noire à tous les éléments `block` */
@@ -16,9 +16,17 @@ h1 {
   border: 1px solid black;
 }
 
-
+#root{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .container{
   max-width: 1200px;
-  margin: 0 auto;  
+  margin: 0 auto;
+
 }
+
+

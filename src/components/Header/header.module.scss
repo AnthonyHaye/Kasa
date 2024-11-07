@@ -1,7 +1,7 @@
 @use '../../style/variables' as variable;
 @use '../../style/mixins' as mixins;
 
-header{
-    @include mixins.flex-center(space-between);
-    padding: 1rem 2rem;
+header {
+  @include mixins.flex-center(space-between);
+  padding: 1rem 2rem;
 }

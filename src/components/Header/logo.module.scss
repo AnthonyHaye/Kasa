@@ -1,11 +1,11 @@
 @use '../../style/variables' as variable;
 
-img{
-    width: 25%;
-    @media (min-width: variable.$md-breakpoint) {
-        width: 15%;
-      }
-      @media (min-width: variable.$lg-breakpoint) {
-        width: 10%;
-      }
+img {
+  width: 25%;
+  @media (min-width: variable.$md-breakpoint) {
+    width: 15%;
+  }
+  @media (min-width: variable.$lg-breakpoint) {
+    width: 10%;
+  }
 }

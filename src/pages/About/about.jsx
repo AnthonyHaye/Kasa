@@ -1,9 +1,9 @@
-import Header from "../../components/Header/Header";
+import Header from '../../components/Header/Header'
 
 const About = () => {
   return (
     <div className="container">
-      <Header/>
+      <Header />
     </div>
   )
 }

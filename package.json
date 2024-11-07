@@ -1,6 +1,7 @@
 {
   "name": "kasa",
   "version": "0.1.0",
+  "main": "src/main.jsx",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
