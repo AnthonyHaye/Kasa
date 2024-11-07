@@ -1,0 +1,21 @@
+//fonts
+@import url(https://fonts.bunny.net/css?family=montserrat:400,500,700);
+//300 normal
+//400 medium
+//700 bold
+$font-montserrat : 'Montserrat', sans-serif;
+
+
+//colors
+//red
+$color-primary : #FF6060;
+//grey
+$color-bg : #F6F6F6;
+//black
+$text-dark : #000000;
+//white
+$text-light : #FFFFFF;
+
+//breakpoints
+$md-breakpoint: 768px;
+$lg-breakpoint: 1024px;
