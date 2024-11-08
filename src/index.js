@@ -1,11 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import {
+  createBrowserRouter,
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom'
 import reportWebVitals from './reportWebVitals'
 
-import App from './components/App'
 import Home from './pages/Home/home'
 import About from './pages/About/about'
+import Rental from './pages/Rental/rental'
 import Error from './components/Error/error'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -15,7 +20,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/kasa" element={<App />} />
+        <Route path="/location" element={<Rental />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </Router>
@@ -26,3 +31,15 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals()
+
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <Home />,
+    },
+  ],
+  { basename: '/MonProjetKasa' },
+)
+
+export default router

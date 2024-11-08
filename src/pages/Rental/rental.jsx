@@ -1,18 +1,16 @@
 import Header from '../../components/Header/Header'
 import Banner from '../../components/Banner/Banner'
-import montagne from '../../assets/montagne.jpg'
+import Background from '../../assets/Background.jpg'
 import Footer from '../../components/Footer/Footer'
 
-const About = () => {
+const Rental = () => {
   return (
     <div className="container">
       <Header />
-      <Banner imageUrl={montagne} 
-      title="Chez vous, partout et ailleurs"/>
+      <Banner imageUrl={Background} />
       <Footer />
     </div>
   )
 }
 
-
-export default About
+export default Rental
