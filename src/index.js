@@ -7,6 +7,7 @@ import {
   Route,
 } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals'
+import './style/main.scss'
 
 import Home from './pages/Home/home'
 import About from './pages/About/about'
