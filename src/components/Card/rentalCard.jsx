@@ -3,12 +3,14 @@ import './rentalCard.scss'
 
 const RentalCard = ({ title, image, action}) =>{
         return(
-                <div
-                className="rentalCard"
-                style={{background: `url(${image})` }}
-                onClick={action}>
-                        <h2>{title}</h2>
-                </div>
+                <button
+      className="rentalCard"
+      onClick={action}
+      aria-label={`Voir les détails pour ${title}`}
+    >
+      <img src={image} alt={title} className="rentalCard__image" />
+      <h2 className="rentalCard__title">{title}</h2>
+    </button>
 
         )
 }

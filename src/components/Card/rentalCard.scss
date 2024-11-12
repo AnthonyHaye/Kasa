@@ -1,40 +1,65 @@
 @use '../../style/variables' as v;
 @use '../../style/mixins' as m;
 
-.rentalCard{
-        @include m.background-and-border();
-        width: 100%;
-        height: 250px;
-        display: flex;
-        align-items: flex-end;
-        padding: 1rem;
-        margin:1rem;
-        cursor: pointer;
-        position: relative;
-        &::before{
-                content:'';
-                position: absolute;
-                border-radius: 10px;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%
-        }
-        h2 {
-                @include m.typography(1.6rem, 700, v.$text-light);
-                padding: 0.5rem 1rem;
-                border-radius: 10px;
-                margin: 0;
-                z-index: 2;
-              }
-          
-              @media (min-width: v.$md-breakpoint) {
-                flex-basis: 45%;
-              }
-              @media (min-width: v.$lg-breakpoint) {
-                flex-basis: 30%;
-              }
-            
+.rentalCard {
+  cursor: pointer;
+  @include m.background-and-border();
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  position: relative;
+  margin: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
 
+  .rentalCard__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
 
+  .rentalCard__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Assombrissement */
+    z-index: 2;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .rentalCard__title {
+    @include m.typography(1.6rem, 700, v.$text-light);
+    padding: 1rem;
+    z-index: 3;
+    position: relative;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Pour améliorer la lisibilité */
+  }
+
+  &:hover .rentalCard__image {
+    transform: scale(1.05); /* Zoom sur l'image au survol */
+  }
+
+  &:hover .rentalCard__overlay {
+    background: rgba(0, 0, 0, 0.6); /* Assombrissement plus fort au survol */
+  }
+
+  @media (min-width: v.$md-breakpoint) {
+    flex-basis: 45%;
+  }
+
+  @media (min-width: v.$lg-breakpoint) {
+    flex-basis: 30%;
+  }
 }
