@@ -7,12 +7,10 @@ const About = () => {
   return (
     <div className="container">
       <Header />
-      <Banner imageUrl={montagne} 
-      title="Chez vous, partout et ailleurs"/>
+      <Banner imageUrl={montagne} title="Chez vous, partout et ailleurs" />
       <Footer />
     </div>
   )
 }
-
 
 export default About

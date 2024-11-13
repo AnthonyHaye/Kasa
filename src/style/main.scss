@@ -16,23 +16,23 @@ h1 {
   border: 1px solid black;
 }
 
-#root{
+#root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.container{
+.container {
   max-width: 1200px;
   margin: 0 auto;
-  .main{
+  .main {
     margin: 1rem;
     padding-bottom: 1rem;
   }
 }
 
-.rentalCardContainer{
+.rentalCardContainer {
   @include mixins.flex-center(center, row, wrap);
   padding: 1rem 0;
   @media (min-width: variable.$md-breakpoint) {
@@ -40,4 +40,3 @@ h1 {
     border-radius: 10px;
   }
 }
-

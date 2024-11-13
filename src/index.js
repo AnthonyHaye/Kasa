@@ -11,8 +11,8 @@ import './style/main.scss'
 
 import Home from './pages/Home/home'
 import About from './pages/About/about'
-import Rental from './pages/Rental/rental'
-import Error from './components/Error/error'
+import RentalDetail from './pages/RentalDetail/rentalDetail'
+import Error from './pages/Error/error'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -21,7 +21,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/location" element={<Rental />} />
+        <Route path="/rental/:id" element={<RentalDetail />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </Router>
