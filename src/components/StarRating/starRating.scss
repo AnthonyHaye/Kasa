@@ -1,0 +1,24 @@
+@use '../../style/variables' as v;
+@use '../../style/mixins' as m;
+
+.rating {
+  flex-basis: 70%;
+  display: flex;
+  order: 1;
+  gap: 0.5rem;
+  svg {
+    @include m.typography(1.5rem, 400, v.$color-primary);
+  }
+}
+
+@media (min-width: v.$md-breakpoint) {
+  .rating {
+    order: 2;
+    flex-basis: auto;
+    display: flex;
+    svg {
+      color: v.$color-primary;
+      font-size: 1.8rem;
+    }
+  }
+}

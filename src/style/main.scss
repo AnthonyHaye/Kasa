@@ -29,6 +29,7 @@ h1 {
   .main {
     margin: 1rem;
     padding-bottom: 1rem;
+    @include mixins.flex-center(center, row, wrap);
   }
 }
 

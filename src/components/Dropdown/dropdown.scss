@@ -1,0 +1,68 @@
+@use '../../style/variables' as v;
+@use '../../style/mixins' as m;
+
+.dropdown {
+  width: 100%;
+  margin: 1rem 0;
+  .dropdownBtn {
+    @include m.flex-center(space-between);
+    width: 100%;
+    padding: 1rem 1rem 1rem 0.5rem;
+    background-color: v.$color-primary;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    @include m.typography(1.3rem, 700, v.$text-light);
+    &:focus {
+      outline: none;
+    }
+    .arrow {
+      margin-left: 0.5rem;
+      transition: transform 0.4s ease-in-out;
+      svg {
+        font-size: 1.9rem;
+      }
+
+      &.rotated {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+  .dropdownContent {
+    margin: 0;
+    padding: 0.75rem;
+    background-color: v.$color-bg;
+    @include m.typography(1rem, 400, v.$text-dark);
+    border-radius: 5px;
+    list-style: none;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    /*point d'origine de la transformation en haut */
+    transform-origin: top;
+    /* échelle verticale de 0 (invisible) */
+    transform: scaleY(0);
+    transition:
+      max-height 0.4s ease,
+      opacity 0.4s ease,
+      transform 0.4s ease;
+    &.active {
+      max-height: fit-content;
+      opacity: 1;
+      /*échelle verticale à 1 pour que le contenu soit visible */
+      transform: scaleY(1);
+    }
+    .dropdownItem {
+      padding: 0.5rem 0;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    ul {
+      list-style-type: none;
+    }
+  }
+  @media (min-width: v.$md-breakpoint) {
+    width: 45%;
+  }
+}

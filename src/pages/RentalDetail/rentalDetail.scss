@@ -1,0 +1,120 @@
+@use '../../style/variables' as v;
+@use '../../style/mixins' as m;
+
+.rentalInfo {
+        background-color: orange;
+        .rentalHeader{
+                background-color: greenyellow;
+                width: 90%;
+                margin: auto;
+                .rentalAppartement{
+                        h1{
+                          @include m.typography(1.8rem, 500,v.$color-primary);
+                          margin-bottom: 0.5rem;
+                        }
+                        h2{
+                          @include m.typography(1.4rem, 400, v.$text-dark);
+                        }
+                }
+                .rentalTags{
+                        @include m.flex-center();
+                        gap: 0.5rem;
+                      }
+
+                @media (min-width: v.$md-breakpoint) {
+                .rentalAppartement{
+                                h1{
+                                font-size: 2.8rem;
+                                }
+                                h2{
+                                font-size: 1.6rem;
+                                }
+                        }
+                }
+        
+                @media (min-width: v.$lg-breakpoint) {
+                        .rentalAppartement{
+                                h1{
+                                font-size: 3.6rem;
+                                }
+                                h2{
+                                font-size: 1.8rem;
+                                }
+                        }
+                }                
+        }
+
+        .rentalRatingHost{
+                background-color: yellow;
+                width: 90%;
+                margin: auto;
+                @include m.flex-center(space-between);
+                .hostInfo{
+                        @include m.flex-center(space-around);
+                        flex-basis: 30%;
+                        order: 2;
+                        .hostName{
+                                @include m.typography(1.2rem, 400, v.$color-primary);
+                                flex-basis: 60%;
+                                }
+                        .hostPicture{
+                                border-radius: 50px;
+                                flex-basis: 40%;
+                                }
+                }
+
+                @media (min-width: v.$md-breakpoint) {
+                        flex-direction: column;
+                        align-items: flex-end;
+                        .hostInfo{
+                         flex-basis: auto;
+                         display: flex;
+                         justify-content: end;
+                         order: 1;
+                           .hostName{
+                             font-size: 1.8rem;
+                             flex-basis: 40%;
+                             }
+                           .hostPicture{
+                             border-radius: 50px;
+                             flex-basis: 20%;
+                           }
+                        }                         
+                }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media (min-width: v.$md-breakpoint) {
+                width: 90%;
+                margin: auto;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                .rentalHeader, .rentalRatingHost{
+                  flex-basis: 50%;
+                }
+               }
+  
+  
+}
+.rentalDescriptionEquipments{
+        width: 90%;
+        margin: auto;
+        @media (min-width: v.$md-breakpoint) {
+         display: flex;
+         justify-content: space-between;
+        }
+      }

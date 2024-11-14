@@ -6,18 +6,18 @@
   position: relative;
   width: 90vw;
   height: 255px;
-  max-width: 1200px; 
+  max-width: 1200px;
   max-height: 415px;
   overflow: hidden;
   margin: 0.5rem auto;
   border-radius: 10px;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; 
-      object-position: center;
-    }
-  .carouselBtn{
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .carouselBtn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -31,18 +31,18 @@
       outline: none;
     }
     &.prev {
-        left: 5px;
+      left: 5px;
     }
     &.next {
-        right: 5px;
+      right: 5px;
     }
   }
-  .carouselIndex{
+  .carouselIndex {
     display: hidden;
   }
   @media (min-width: v.$md-breakpoint) {
     height: 360px;
-    .carouselIndex{
+    .carouselIndex {
       @include m.typography(2rem, 500, v.$text-light);
       position: absolute;
       bottom: 5%;
@@ -51,6 +51,6 @@
     }
   }
   @media (min-width: v.$lg-breakpoint) {
-  height: 415px;
+    height: 415px;
   }
 }

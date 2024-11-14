@@ -1,0 +1,25 @@
+@use '../../style/variables' as v;
+@use '../../style/mixins' as m;
+
+.tag {
+  @include m.flex-center(center);
+  width: fit-content;
+  margin: 1rem 0;
+  background-color: v.$color-primary;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  p {
+    @include m.typography(1rem, 600, v.$text-light);
+    margin: 0;
+  }
+  @media (min-width: v.$md-breakpoint) {
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  @media (min-width: v.$lg-breakpoint) {
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}
