@@ -55,7 +55,7 @@ const RentalDetail = () => {
           </div>
         </div>
         <div className="rentalDescriptionEquipments">
-          <Dropdown title="Description" content={rental.description} />
+          <Dropdown title="Description" content={rental.description} items={rental.equipments} />
           <Dropdown title="Equipements" items={rental.equipments} />
         </div>
       </div>

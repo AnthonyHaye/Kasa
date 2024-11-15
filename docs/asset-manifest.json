@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/Kasa/static/css/main.9277bbcb.css",
-    "main.js": "/Kasa/static/js/main.97b2585e.js",
+    "main.css": "/Kasa/static/css/main.34c30a56.css",
+    "main.js": "/Kasa/static/js/main.6d7798d3.js",
     "static/js/453.9701a2b0.chunk.js": "/Kasa/static/js/453.9701a2b0.chunk.js",
     "static/media/montagne.jpg": "/Kasa/static/media/montagne.7afd369730a7227263fd.jpg",
     "static/media/coteRocheuse.jpg": "/Kasa/static/media/coteRocheuse.b753a40cb653b706ead0.jpg",
-    "static/media/Background.jpg": "/Kasa/static/media/Background.a4b3411b775ab7a0251f.jpg",
     "static/media/kasa_logo_footer.svg": "/Kasa/static/media/kasa_logo_footer.358c63a1cf7313015e37ab1fd36be54f.svg",
     "static/media/kasa_logo.svg": "/Kasa/static/media/kasa_logo.569b01ae7d8fc62c3bc3c6fb71ad27b5.svg",
     "index.html": "/Kasa/index.html",
-    "main.9277bbcb.css.map": "/Kasa/static/css/main.9277bbcb.css.map",
-    "main.97b2585e.js.map": "/Kasa/static/js/main.97b2585e.js.map",
+    "main.34c30a56.css.map": "/Kasa/static/css/main.34c30a56.css.map",
+    "main.6d7798d3.js.map": "/Kasa/static/js/main.6d7798d3.js.map",
     "453.9701a2b0.chunk.js.map": "/Kasa/static/js/453.9701a2b0.chunk.js.map"
   },
-  "entrypoints": ["static/css/main.9277bbcb.css", "static/js/main.97b2585e.js"]
+  "entrypoints": [
+    "static/css/main.34c30a56.css",
+    "static/js/main.6d7798d3.js"
+  ]
 }
