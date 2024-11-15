@@ -39,16 +39,14 @@
   }
   .carouselIndex {
     display: hidden;
-  }
-  @media (min-width: v.$md-breakpoint) {
-    height: 360px;
-    .carouselIndex {
-      @include m.typography(2rem, 500, v.$text-light);
+    @include m.typography(2rem, 500, v.$text-light);
       position: absolute;
       bottom: 5%;
       transform: translateY(-50%);
       z-index: 10;
-    }
+  }
+  @media (min-width: v.$md-breakpoint) {
+    height: 360px;    
   }
   @media (min-width: v.$lg-breakpoint) {
     height: 415px;

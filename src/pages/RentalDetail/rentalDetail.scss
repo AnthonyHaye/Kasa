@@ -1,10 +1,8 @@
 @use '../../style/variables' as v;
 @use '../../style/mixins' as m;
 
-.rentalInfo {
-        background-color: orange;
-        .rentalHeader{
-                background-color: greenyellow;
+.rentalInfo {        
+        .rentalHeader{                
                 width: 90%;
                 margin: auto;
                 .rentalAppartement{
@@ -45,7 +43,6 @@
         }
 
         .rentalRatingHost{
-                background-color: yellow;
                 width: 90%;
                 margin: auto;
                 @include m.flex-center(space-between);

@@ -3,18 +3,18 @@
 @use './mixins' as mixins;
 
 /* Applique une bordure noire à tous les éléments `block` */
-div,
-section,
-article,
-aside,
-header,
-footer,
-main,
-nav,
-img,
-h1 {
-  border: 1px solid black;
-}
+// div,
+// section,
+// article,
+// aside,
+// header,
+// footer,
+// main,
+// nav,
+// img,
+// h1 {
+//   border: 1px solid black;
+// }
 
 #root {
   min-height: 100vh;

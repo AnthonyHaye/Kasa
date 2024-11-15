@@ -55,8 +55,16 @@ const RentalDetail = () => {
           </div>
         </div>
         <div className="rentalDescriptionEquipments">
-          <Dropdown title="Description" content={rental.description} items={rental.equipments} />
-          <Dropdown title="Equipements" items={rental.equipments} />
+          <Dropdown title='Description'> {rental.description} </Dropdown>
+          <Dropdown title="Equipements"> {rental.equipments.length > 0 ? (
+          <ul>
+            {rental.equipments.map((item, index) => (
+              <li key={index} className="dropdownItem">{item}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>Aucun équipement disponible</p>
+        )}</Dropdown>
         </div>
       </div>
       <Footer />
