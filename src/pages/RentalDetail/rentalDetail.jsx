@@ -22,7 +22,7 @@ const RentalDetail = () => {
   }
 
   return (
-    <div className="container">
+    <div className="container rentalDetailPage">
       <Header />
       <RentalCarousel imageRental={rental.pictures} />
       <div className="main">

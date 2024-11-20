@@ -62,6 +62,21 @@
       list-style-type: none;
     }
   }
+   // Largeur globale par défaut pour mobile
+   @media (min-width: v.$md-breakpoint) {
+    width: 100%;
+  }
+}
+
+// Variation pour la page About
+.aboutPage .dropdown {
+  @media (min-width: v.$md-breakpoint) {
+    width: 70%;
+  }
+}
+
+// Variation pour la page RentalDetail
+.rentalDetailPage .dropdown {
   @media (min-width: v.$md-breakpoint) {
     width: 45%;
   }

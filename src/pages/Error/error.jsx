@@ -4,7 +4,7 @@ import '../Error/error.scss'
 
 const Error = () => {
   return (
-    <>
+    
       <div className="container">
         <Header />
         <div className="main">
@@ -15,8 +15,8 @@ const Error = () => {
           </div>
         </div>
       </div>
-      {/* <Footer/> */}
-    </>
+      
+    
   )
 }
 
