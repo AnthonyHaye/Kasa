@@ -5,8 +5,10 @@ nav {
   ul {
     display: flex;
     gap: 1.5rem;
+    padding-block-start: 10px;
     li {
       list-style: none;
+      padding-left: 20px;
       a {
         text-decoration: none;
         @include mixins.typography(1.2rem, 500, variable.$text-dark);

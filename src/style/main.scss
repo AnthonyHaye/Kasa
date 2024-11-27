@@ -21,22 +21,30 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
+
   .main {
-    margin: 1rem;
+    margin: 0rem;
     padding-bottom: 1rem;
     // height: 100%;
     @include mixins.flex-center(center, row, wrap);
   }
+
+  @media (min-width: variable.$lg-breakpoint) {    
+    .main {
+      margin-top: 4rem;
+    }
+  }
 }
 
 .rentalCardContainer {
-  @include mixins.flex-center(center, row, wrap);
-  padding: 1rem 0;
+  
+  @include mixins.flex-center(space-evenly, row, wrap);
+  padding: 0rem 0rem;
   @media (min-width: variable.$md-breakpoint) {
     background-color: variable.$color-bg;
-    border-radius: 10px;
+    border-radius: 30px;
   }
 }
 
@@ -47,4 +55,5 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;  
+  margin: 3rem;
 }

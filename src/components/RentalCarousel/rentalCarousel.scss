@@ -27,6 +27,7 @@
     padding: 0.5rem;
     z-index: 10;
     @include m.typography(1.8rem, 500, v.$text-light);
+    
     &:focus {
       outline: none;
     }
@@ -46,7 +47,11 @@
       z-index: 10;
   }
   @media (min-width: v.$md-breakpoint) {
-    height: 360px;    
+    height: 360px; 
+    svg {
+      width: 4rem;
+      height: 4rem;
+    }   
   }
   @media (min-width: v.$lg-breakpoint) {
     height: 415px;
