@@ -12,8 +12,5 @@
     "main.094fcd16.js.map": "/Kasa/static/js/main.094fcd16.js.map",
     "453.9701a2b0.chunk.js.map": "/Kasa/static/js/453.9701a2b0.chunk.js.map"
   },
-  "entrypoints": [
-    "static/css/main.84c717b6.css",
-    "static/js/main.094fcd16.js"
-  ]
+  "entrypoints": ["static/css/main.84c717b6.css", "static/js/main.094fcd16.js"]
 }

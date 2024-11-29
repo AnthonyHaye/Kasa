@@ -8,7 +8,7 @@ const StarRating = ({ rating, maxRating = 5 }) => {
   const emptyStars = maxRating - fullStars
 
   return (
-    <div className="rating">
+    <div className="rating" aria-label={`Note : ${rating} sur ${maxRating}`}>
       {/* Affiche les étoiles pleines
                         Création du tableau d'étoiles pleines selon ce qui est récupéré de rental.rating */}
       {[...Array(fullStars)].map((_, index) => (

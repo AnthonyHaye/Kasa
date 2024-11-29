@@ -24,11 +24,10 @@ const RentalDetail = () => {
   return (
     <div className="container rentalDetailPage">
       <Header />
-      <RentalCarousel imageRental={rental.pictures} />
-      <div className="main">
+      <main className="main">
+        <RentalCarousel imageRental={rental.pictures} />
 
-        <div className="rentalInfo">
-
+        <section className="rentalInfo">
           <div className="rentalHeader">
             <div className="rentalAppartement">
               <h1>{rental.title}</h1>
@@ -39,7 +38,7 @@ const RentalDetail = () => {
                 <Tag key={index} name={tag} />
               ))}
             </div>
-          </div>   
+          </div>
 
           <div className="rentalRatingHost">
             {/* parseInt convertit une chaine de caractère ici en décimal */}
@@ -53,20 +52,25 @@ const RentalDetail = () => {
               />
             </div>
           </div>
-        </div>
-        <div className="rentalDescriptionEquipments">
-          <Dropdown title='Description'> {rental.description} </Dropdown>
-          <Dropdown title="Equipements"> {rental.equipments.length > 0 ? (
-          <ul>
-            {rental.equipments.map((item, index) => (
-              <li key={index} className="dropdownItem">{item}</li>
-            ))}
-          </ul>
-        ) : (
-          <p>Aucun équipement disponible</p>
-        )}</Dropdown>
-        </div>
-      </div>
+        </section>
+        <section className="rentalDescriptionEquipments">
+          <Dropdown title="Description"> {rental.description} </Dropdown>
+          <Dropdown title="Equipements">
+            {' '}
+            {rental.equipments.length > 0 ? (
+              <ul>
+                {rental.equipments.map((item, index) => (
+                  <li key={index} className="dropdownItem">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p>Aucun équipement disponible</p>
+            )}
+          </Dropdown>
+        </section>
+      </main>
       <Footer />
     </div>
   )

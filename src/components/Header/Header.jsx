@@ -5,9 +5,11 @@ import kasaLogo from '../../assets/kasa_logo.svg'
 
 const Header = () => {
   return (
-    <header className={styles.header}>
-      <Logo url={kasaLogo} />
-      <NavLinks />
+    <header className={styles.header} aria-label="En-tête du site Kasa">
+      <Logo url={kasaLogo} alt="Logo Kasa" />
+      <nav aria-label="Navigation principale">
+        <NavLinks />
+      </nav>
     </header>
   )
 }

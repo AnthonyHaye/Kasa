@@ -1,4 +1,4 @@
-import {  useState } from 'react'
+import { useState } from 'react'
 import PropTypes from 'prop-types'
 import '../Dropdown/dropdown.scss'
 import { IoIosArrowUp } from 'react-icons/io'
@@ -35,8 +35,13 @@ const Dropdown = ({ title, children }) => {
         </span>
       </button>
       {/* affiche les enfants seulement si le menu est ouvert */}
-      <div className={`dropdownContent ${isOpen ? 'active' : ''}`}>
-        {isOpen && children}
+      <div
+        id="dropdown-content"
+        className={`dropdownContent ${isOpen ? 'active' : ''}`}
+        role="region"
+        aria-hidden={!isOpen}
+      >
+        {children}
       </div>
     </div>
   )
@@ -44,8 +49,7 @@ const Dropdown = ({ title, children }) => {
 
 Dropdown.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  items: PropTypes.arrayOf(PropTypes.string),
+  children: PropTypes.node.isRequired,
 }
 
 export default Dropdown

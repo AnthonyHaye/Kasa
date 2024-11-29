@@ -31,7 +31,7 @@
     @include mixins.flex-center(center, row, wrap);
   }
 
-  @media (min-width: variable.$lg-breakpoint) {    
+  @media (min-width: variable.$lg-breakpoint) {
     .main {
       margin-top: 4rem;
     }
@@ -39,7 +39,6 @@
 }
 
 .rentalCardContainer {
-  
   @include mixins.flex-center(space-evenly, row, wrap);
   padding: 0rem 0rem;
   @media (min-width: variable.$md-breakpoint) {
@@ -48,12 +47,12 @@
   }
 }
 
-.aboutDropdown{
+.aboutDropdown {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   margin: 3rem;
 }

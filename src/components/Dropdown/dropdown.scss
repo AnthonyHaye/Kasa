@@ -62,8 +62,8 @@
       list-style-type: none;
     }
   }
-   // Largeur globale par défaut pour mobile
-   @media (min-width: v.$md-breakpoint) {
+  // Largeur globale par défaut pour mobile
+  @media (min-width: v.$md-breakpoint) {
     width: 100%;
   }
 }

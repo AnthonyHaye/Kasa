@@ -3,7 +3,7 @@ import styles from '../Header/navLinks.module.scss'
 
 const NavLinks = () => {
   return (
-    <nav className={styles.navlinks}>
+    <nav className={styles.navlinks} aria-label="Navigation principale">
       <ul>
         <li>
           <NavLink

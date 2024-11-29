@@ -37,11 +37,14 @@ const Home = () => {
   }
 
   return (
-    <div className="container">
+    <div className="container homePage">
       <Header />
       <Banner imageUrl={coteRocheuse} title="Chez vous, partout et ailleurs" />
       <div className="main">
-        <div className="rentalCardContainer">
+        <section
+          className="rentalCardContainer"
+          aria-label="Liste des logements"
+        >
           {logements.length > 0 ? (
             logements.map((rental) => (
               <RentalCard
@@ -54,7 +57,7 @@ const Home = () => {
           ) : (
             <p>Chargement des données...</p>
           )}
-        </div>
+        </section>
       </div>
       <Footer />
     </div>

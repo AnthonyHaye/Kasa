@@ -6,10 +6,12 @@ const RentalCard = ({ title, image, action }) => {
     <button
       className="rentalCard"
       onClick={action}
-      aria-label={`Voir les détails pour ${title}`}
+      aria-labelledby="rentalCard-title"
     >
       <img src={image} alt={title} className="rentalCard__image" />
-      <h2 className="rentalCard__title">{title}</h2>
+      <h2 id="rentalCard-title" className="rentalCard__title">
+        {title}
+      </h2>
     </button>
   )
 }

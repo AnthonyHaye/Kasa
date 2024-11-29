@@ -3,14 +3,18 @@ import '../Banner/banner.scss'
 
 const Banner = ({ imageUrl, title }) => {
   return (
-    <div className="banner" style={{ backgroundImage: `url(${imageUrl})` }}>
+    <section
+      className="banner"
+      style={{ backgroundImage: `url(${imageUrl})` }}
+      role="banner"
+    >
       {title && <h1>{title}</h1>}
-    </div>
+    </section>
   )
 }
 
 Banner.propTypes = {
-  imageUrl: PropTypes.string,
+  imageUrl: PropTypes.string.isRequired,
   title: PropTypes.string,
 }
 
