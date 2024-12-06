@@ -42,10 +42,11 @@
   .rentalCard__title {
     @include m.typography(1.6rem, 700, v.$text-light);
     padding: 1rem;
+    text-align: left;
     z-index: 3;
     position: relative;
     color: #fff;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Pour améliorer la lisibilité */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9); /* Pour améliorer la lisibilité */
   }
 
   &:hover .rentalCard__image {

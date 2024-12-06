@@ -81,7 +81,7 @@
   }
 
   @media (min-width: v.$md-breakpoint) {
-    width: 90%;
+    width: 95%;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -93,7 +93,7 @@
   }
 }
 .rentalDescriptionEquipments {
-  width: 90%;
+  width: 95%;
   margin: auto;
   @media (min-width: v.$md-breakpoint) {
     display: flex;

@@ -14,8 +14,6 @@ const RentalDetail = () => {
   const location = useLocation()
   const rental = location.state?.rental
 
-  console.log('Données reçues par RentalDetail:', rental)
-
   // Si le logement n'existe pas dans `state`, afficher une page d'erreur
   if (!rental || rental.id !== id) {
     return <Error />

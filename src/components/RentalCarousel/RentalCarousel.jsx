@@ -4,7 +4,7 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import '../RentalCarousel/rentalCarousel.scss'
 
 const RentalCarousel = ({ imageRental }) => {
-  console.log('Images reçues par RentalCarousel:', imageRental)
+  
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const goToPrevious = () => {
